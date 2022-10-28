@@ -1,0 +1,19 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/js/home.js": "/js/home.js",
+    "/js/Languages.js": "/js/Languages.js",
+    "/js/LanguagesNameTranslate.js": "/js/LanguagesNameTranslate.js",
+    "/js/Categories.js": "/js/Categories.js",
+    "/js/userAllData.js": "/js/userAllData.js",
+    "/js/ProductCreate.js": "/js/ProductCreate.js",
+    "/js/ProductEdit.js": "/js/ProductEdit.js",
+    "/js/Product.js": "/js/Product.js",
+    "/js/OrderCreate.js": "/js/OrderCreate.js",
+    "/js/OrderEdit.js": "/js/OrderEdit.js",
+    "/js/Order.js": "/js/Order.js",
+    "/js/Slides.js": "/js/Slides.js",
+    "/js/Icon.js": "/js/Icon.js",
+    "/js/User.js": "/js/User.js",
+    "/js/Resume.js": "/js/Resume.js",
+    "/css/app.css": "/css/app.css"
+}
