@@ -38,7 +38,7 @@ class FileController extends Controller
             $pngData = $image->getImagesBlob();
             return response($image, $pngData);
         }catch (\Exception $exception){
-            return response($exception,$exception->getCode());
+            return response($exception,(integer)$exception->getCode());
         }
 
 //        echo str_starts_with($pngData, "\x89PNG\r\n\x1a\n") ? 'Ok' : 'Failed';
