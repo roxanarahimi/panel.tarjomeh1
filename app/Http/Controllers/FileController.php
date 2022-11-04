@@ -3,10 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-//use Imagick;
-//use ImagickPixel;
-use Imagick;
-use ImagickPixel;
+
 use thiagoalessio\TesseractOCR\TesseractOCR;
 //use Spatie\PdfToImage\Pdf;
 
@@ -32,16 +29,31 @@ class FileController extends Controller
 
     public function tst2(){
         try {
-            $image = new Imagick('translate/2022-09-24-1664044177-resume.io_r_08tTDpInc.pdf[0]');
-            $image->newImage(1, 1, new ImagickPixel('#ffffff'));
-            $image->setImageFormat('png');
-            $pngData = $image->getImagesBlob();
-            return response($image, $pngData);
+//            $img = new \imagick();
+//            $img->setResolution(200,300);
+//            $img->readImage("translate/2022-09-24-1664044177-resume.io_r_08tTDpInc.pdf[0]");
+
+            $file="translate/2022-09-24-1664044177-resume.io_r_08tTDpInc.pdf[0]";
+            $im = new \Imagick($file);
+
+            return $im;
+//            $noOfPagesInPDF = $im->getNumberImages();
+
+//            if ($noOfPagesInPDF) {
+//
+//                for ($i = 0; $i < $noOfPagesInPDF; $i++) {
+//                    $url = $file.'['.$i.']';
+//                    $image = new \Imagick();
+//                    $image->setResolution(300,300);
+//                    $image->readimage($url);
+//                    $image->setImageFormat("jpg");
+//                    $image->writeImage("./".($i+1).'-'.rand().'.jpg');
+//                }
+//                echo "All pages of PDF converted.";
+//            }
         }catch (\Exception $exception){
             return $exception;
         }
-
-//        echo str_starts_with($pngData, "\x89PNG\r\n\x1a\n") ? 'Ok' : 'Failed';
     }
     public function tst()
     {
