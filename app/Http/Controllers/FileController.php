@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 //use Imagick;
 //use ImagickPixel;
+use Imagick;
+use ImagickPixel;
 use thiagoalessio\TesseractOCR\TesseractOCR;
 //use Spatie\PdfToImage\Pdf;
 
