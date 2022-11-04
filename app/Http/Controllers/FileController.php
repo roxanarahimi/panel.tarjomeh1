@@ -31,26 +31,14 @@ class FileController extends Controller
         try {
 //            $img = new \imagick();
 //            $img->setResolution(200,300);
-//            $img->readImage("translate/2022-09-24-1664044177-resume.io_r_08tTDpInc.pdf[0]");
+//            $img->readImage("");
 
-            $file="translate/2022-09-24-1664044177-resume.io_r_08tTDpInc.pdf[0]";
-            $im = new \Imagick($file);
+            $image = new \Imagick();
+            $image->setResolution(200,300);
+            $image->readimage('translate/2022-09-24-1664044177-resume.io_r_08tTDpInc.pdf[0]');
+            $image->setImageFormat("jpg");
+            return $image;
 
-            return $im;
-//            $noOfPagesInPDF = $im->getNumberImages();
-
-//            if ($noOfPagesInPDF) {
-//
-//                for ($i = 0; $i < $noOfPagesInPDF; $i++) {
-//                    $url = $file.'['.$i.']';
-//                    $image = new \Imagick();
-//                    $image->setResolution(300,300);
-//                    $image->readimage($url);
-//                    $image->setImageFormat("jpg");
-//                    $image->writeImage("./".($i+1).'-'.rand().'.jpg');
-//                }
-//                echo "All pages of PDF converted.";
-//            }
         }catch (\Exception $exception){
             return $exception;
         }
