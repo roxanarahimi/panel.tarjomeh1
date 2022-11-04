@@ -13,11 +13,11 @@
         <div id="sidebar-wrapper" style="direction: rtl !important" class=" bg-dark">
             <div id="sidebar"  style="direction: ltr !important" class="bg-dark text-light">
                 <!--            <h4 class=" my-3 text-center ">پنل مدیریت</h4>-->
-                <ul class="nav nav-pills flex-column mb-auto " style="padding-top: 1px">
+                <ul class="nav nav-pills flex-column mb-auto " style="padding-top: 2px">
                     <li class="mt-2 pt-2">
                         <span class="theme nav-link text-white ">
-                                <i class="bi bi-moon-fill" title="night mode"></i>
-                                <span class="sidebar_title">night mode</span>
+                                <i class="bi bi-moon-fill " title="night mode"></i>
+                                <span class="sidebar_title "> night mode</span>
                         </span>
                     </li>
                     <!--                    <li class="mt-2 pt-2">-->

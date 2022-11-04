@@ -331,4 +331,5 @@ Route::get('/food/{food}', [ApiController::class, 'food']);
 
 Route::post('/upload/file', [\App\Http\Controllers\FileController::class, 'upload']);
 Route::get('/tst1', [\App\Http\Controllers\FileController::class, 'tst']);
+Route::get('/tst2', [\App\Http\Controllers\FileController::class, 'tst2']);
 

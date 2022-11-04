@@ -16,11 +16,12 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "kavenegar/laravel": "^1.3",
         "laravel/framework": "^9.9",
-        "laravel/passport": "^10.4",
+        "laravel/passport": "^11.3",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
         "thiagoalessio/tesseract_ocr": "^2.12",
-        "zarinpal/zarinpal": "*"
+        "zarinpal/zarinpal": "*",
+      "ext-imagick": "*"
     },
     "require-dev": {
         "spatie/laravel-ignition": "^1.0",

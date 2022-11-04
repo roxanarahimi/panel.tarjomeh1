@@ -23250,7 +23250,7 @@ var _hoisted_3 = {
 var _hoisted_4 = {
   "class": "nav nav-pills flex-column mb-auto",
   style: {
-    "padding-top": "1px"
+    "padding-top": "2px"
   }
 };
 
@@ -23264,7 +23264,7 @@ var _hoisted_5 = /*#__PURE__*/_withScopeId(function () {
     title: "night mode"
   }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
     "class": "sidebar_title"
-  }, "night mode")])], -1
+  }, " night mode")])], -1
   /* HOISTED */
   );
 });
