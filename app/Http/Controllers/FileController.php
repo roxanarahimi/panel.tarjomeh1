@@ -37,7 +37,13 @@ class FileController extends Controller
             $image->setResolution(200,300);
             $image->readimage('translate/2022-09-24-1664044177-resume.io_r_08tTDpInc.pdf[0]');
             $image->setImageFormat("jpg");
-            return $image;
+//            return $image;
+            $txt = (new TesseractOCR($image))
+                ->executable('C:\Program Files\Tesseract-OCR\tesseract.exe')
+                ->run();
+            $txt = str_replace("\n", ' ', $txt);
+            $count = explode(' ', $txt);
+            return count($count);
 
         }catch (\Exception $exception){
             return $exception;
