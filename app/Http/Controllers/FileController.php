@@ -38,12 +38,12 @@ class FileController extends Controller
             $image->readimage('translate/2022-09-24-1664044177-resume.io_r_08tTDpInc.pdf[0]');
             $image->setImageFormat("jpg");
 //            return $image;
-//            $txt = (new TesseractOCR($image))
-//                ->executable('Tesseract-OCR\tesseract.exe')
-//                ->run();
-//            $txt = str_replace("\n", ' ', $txt);
-//            $count = explode(' ', $txt);
-//            return count($count);
+            $txt = (new TesseractOCR($image))
+                ->executable('Tesseract-OCR\tesseract.exe')
+                ->run();
+            $txt = str_replace("\n", ' ', $txt);
+            $count = explode(' ', $txt);
+            return count($count);
 
         }catch (\Exception $exception){
             return $exception;
