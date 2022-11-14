@@ -39,7 +39,7 @@ class FileController extends Controller
             $image->setImageFormat("jpg");
 //            return $image;
             $txt = (new TesseractOCR($image))
-                ->executable('\Tesseract-OCR\tesseract.exe')
+                ->executable('Tesseract-OCR/tesseract.exe')
                 ->run();
             $txt = str_replace("\n", ' ', $txt);
             $count = explode(' ', $txt);
