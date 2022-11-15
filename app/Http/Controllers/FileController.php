@@ -40,7 +40,7 @@ class FileController extends Controller
             file_put_contents('translate/aaa.jpg' , $image);
 
 //            return $image;
-            $txt = (new TesseractOCR($image))
+            $txt = (new TesseractOCR('translate/aaa.jpg'))
                 ->executable('Tesseract-OCR/tesseract.exe')
                 ->run();
             $txt = str_replace("\n", ' ', $txt);
