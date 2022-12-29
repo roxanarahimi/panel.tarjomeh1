@@ -34,7 +34,7 @@ class FileController extends Controller
 //            $img->setResolution(200,300);
 //            $img->readImage("");
 
-            $img = OCR::scan('translate/2022-09-24-1664044177-resume.io_r_08tTDpInc.pdf[0]');
+            $img = \OCR::scan('translate/2022-09-24-1664044177-resume.io_r_08tTDpInc.pdf[0]');
 
 //            $image = new \Imagick();
 //            $image->setResolution(200,300);
