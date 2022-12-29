@@ -233,8 +233,10 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Kavenegar' => Kavenegar\Laravel\Facade::class,
         'SoapWrapper' => Artisaninweb\SoapWrapper\Facade\SoapWrapper::class,
-        'Zarinpal' =>Zarinpal\Laravel\ZarinpalServiceProvider::class
+        'Zarinpal' =>Zarinpal\Laravel\ZarinpalServiceProvider::class,
+        'TesseractOCR' =>thiagoalessio\TesseractOCR\TesseractOCR::class
 
-    ],
+
+            ],
 
 ];
