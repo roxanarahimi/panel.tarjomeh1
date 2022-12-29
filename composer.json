@@ -5,11 +5,13 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
-        "php": "8.0.25",
+        "php": "8.1.4",
         "ext-curl": "*",
         "ext-gd": "*",
+        "ext-imagick": "*",
         "ext-json": "*",
         "ext-soap": "*",
+        "alimranahmed/laraocr": "^1.2",
         "artisaninweb/laravel-soap": "^0.3.0.10",
         "econea/nusoap": "dev-master",
         "fruitcake/laravel-cors": "^2.0",
@@ -20,8 +22,7 @@
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
         "thiagoalessio/tesseract_ocr": "^2.12",
-        "zarinpal/zarinpal": "*",
-      "ext-imagick": "*"
+        "zarinpal/zarinpal": "*"
     },
     "require-dev": {
         "spatie/laravel-ignition": "^1.0",

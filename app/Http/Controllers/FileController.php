@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use thiagoalessio\TesseractOCR\TesseractOCR;
 //use Spatie\PdfToImage\Pdf;
+use Alimranahmed\LaraOCR\Facades\OCR;
 
 class FileController extends Controller
 {
@@ -33,17 +34,19 @@ class FileController extends Controller
 //            $img->setResolution(200,300);
 //            $img->readImage("");
 
-            $image = new \Imagick();
-            $image->setResolution(200,300);
-            $image->readimage('translate/2022-09-24-1664044177-resume.io_r_08tTDpInc.pdf[0]');
-            $image->setImageFormat("jpg");
-            file_put_contents('translate/aaa.jpg' , $image);
-//            return $image;
-            $txt = (new TesseractOCR('translate/aaa.jpg'))
-                ->run();
-            $txt = str_replace("\n", ' ', $txt);
-            $count = explode(' ', $txt);
-            return count($count);
+            $img = OCR::scan('translate/2022-09-24-1664044177-resume.io_r_08tTDpInc.pdf[0]');
+
+//            $image = new \Imagick();
+//            $image->setResolution(200,300);
+//            $image->readimage('translate/2022-09-24-1664044177-resume.io_r_08tTDpInc.pdf[0]');
+//            $image->setImageFormat("jpg");
+//            file_put_contents('translate/aaa.jpg' , $image);
+////            return $image;
+//            $txt = (new TesseractOCR('translate/aaa.jpg'))
+//                ->run();
+//            $txt = str_replace("\n", ' ', $txt);
+//            $count = explode(' ', $txt);
+            return count($img);
 
         }catch (\Exception $exception){
             return $exception;
