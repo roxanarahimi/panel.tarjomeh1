@@ -38,7 +38,6 @@ class FileController extends Controller
             $image->readimage('translate/2022-09-24-1664044177-resume.io_r_08tTDpInc.pdf[0]');
             $image->setImageFormat("jpg");
             file_put_contents('translate/aaa.jpg' , $image);
-
 //            return $image;
             $txt = (new TesseractOCR('translate/aaa.jpg'))
                 ->run();
